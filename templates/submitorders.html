@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爱家-我的订单</title>
+    <link href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/reset.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ihome/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ihome/orders.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="nav-bar">
+               
+                <h3 class="page-title">提交成功</h3>
+                <img src="{% static 'images/logo.jpg' %}" alt="">
+            </div>
+        </div>
+       <div class="bom">
+           <img src="{% static 'images/book_success.png' %}" alt="">
+          <div class="fot"><span>提交成功</span></div> 
+           <button type="submit" class="btn btn-lg btn-theme btn-block btnc" style="background-color: #FFA500;" ><a href="{% url 'house:index' %}" style="color: white">完成</a></button>
+           <button type="submit" class="btn btn-lg btn-theme btn-block btnc" style="background-color: #FFA500;" ><a href="{% url 'order:olist' %}" style="color: white">查看订单</a></button>
+       </div>
+    </div>
+    
+</body>
+</html>
